@@ -1,10 +1,14 @@
-streamlit
-pandas
-requests
-beautifulsoup4
-python-dotenv
-openai
-crewai
-langchain
-langchain-openai
-langchain-community
+pandas==2.2.2
+streamlit==1.35.0
+python-dotenv==1.0.1
+langchain==0.2.0
+langchain-openai==0.1.7
+crewai==0.35.9
+crewai-tools==0.2.6
+requests==2.32.3
+beautifulsoup4==4.12.3
+google-search-results==2.4.2
+
+# A ferramenta SerperDevTool (usada em agentes_economicos.py) requer a biblioteca google-search-results
+# para interagir com a API do Serper. Embora crewai-tools possa listar como dependência,
+# é bom garantir que ela seja instalada.
