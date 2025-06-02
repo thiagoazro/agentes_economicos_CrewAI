@@ -51,6 +51,6 @@ df = pd.DataFrame(noticias_unicas)
 
 print(f"✅ CSV gerado com {len(df)} notícias: noticias_investimentos.csv")
 
-df.to_csv("../data/noticias_investimentos.csv", index=False, encoding="utf-8-sig")
+df.to_csv("data/noticias_investimentos.csv", index=False, encoding="utf-8-sig")
 
 

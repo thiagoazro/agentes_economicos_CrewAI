@@ -24,7 +24,7 @@ chat_model = None
 try:
     chat_model = AzureChatOpenAI(
         deployment_name=os.getenv("AZURE_OPENAI_DEPLOYMENT_LLM"),
-        temperature=0,
+        temperature=0.4,
         azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
         api_key=os.getenv("AZURE_OPENAI_API_KEY"),
         openai_api_version=os.getenv("AZURE_API_VERSION")
