@@ -7,10 +7,10 @@ name: Build and deploy Python app to Azure Web App - lexautomate-agent
 on:
    schedule:
     - cron: '30 23 * * *'  # Executa todos os dias às 20h30 BRT (23h30 UTC)
-  push:
+   push:
     branches:
       - main
-  workflow_dispatch:
+   workflow_dispatch:
 
 jobs:
   build:
